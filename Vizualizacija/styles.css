@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 90%;
+}
+
+svg {
+    position: center;
+    background-color: #2c65ec;
+    height: 570px;
+    width: 70%;
+  }
+  div.tooltip {
+    color: #f5f5f5;
+    background: #474747;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px #6e6d6d;
+    padding: 0.2em;
+    text-shadow: #f5f5f5 0 1px 0;
+    opacity: 0.9;
+    position: absolute;
+  }
+
+select {
+    margin-bottom: 20px;
+    display: block;
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    content: '\25BC';
+}
+
+canvas {
+    width: 400px;
+    height: 300px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 900px; 
+    height: 600px; 
+    margin-bottom: 20px;
+  }
+  
+
+
+.polar-area-container {
+    max-width: 200;
+    margin: 0 auto;
+    padding: 20px;
+    display: none;
+}
+
+.polar-area-container {
+    display: none;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #333; /* Background color for the navbar */
+    width: 100%; /* Set the width to 100% to span the full width of the screen */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center-align the navbar items */
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px; /* Increase spacing between navbar items */
+}
+
+.navbar li:last-child {
+    margin-right: 0; /* Remove margin-right for the last navbar item */
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff; /* Text color for navbar links */
+    font-weight: bold;
+    padding: 10px 20px; /* Increase padding for navbar items */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #555; /* Background color when hovering over a link */
+}

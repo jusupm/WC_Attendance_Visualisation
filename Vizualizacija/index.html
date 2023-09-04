@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Cup Attendance</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="utf-8" />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#" id="showMap">World Map</a></li>
+            <li><a href="#" id="showBarChart">Bar Chart</a></li>
+            <li><a href="#" id="showPolarAreaChart">Polar Area Chart</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>World cup attendance</h1>
+    <svg id="svg" width="960" height="500"></svg>
+    <div class="tooltip"></div>
+    <div id="details"></div>
+    
+    
+    <div class="chart-container">
+        <h2>Attendance</h2>
+        <select id="chartType" onchange="updateChart()">
+            <option value="total">Total Attendance</option>
+            <option value="average">Average Attendance</option>
+        </select>
+        <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="polarAreaChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body> 
+</html>
